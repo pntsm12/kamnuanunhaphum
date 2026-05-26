@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="google-site-verification" content="BcwokyN2W4FMCCIj4YbvGcFCJojtQgojttCnNHCTtL4" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>แปลงหน่วยอุณหภูมิออนไลน์</title>
+<meta name="description" content="แปลงหน่วยอุณหภูมิออนไลน์ฟรี เซลเซียส ฟาเรนไฮต์ เคลวิน แปลงได้ทันที ใช้งานง่าย ไม่ต้องโหลดแอป">
+<meta name="keywords" content="แปลงหน่วยอุณหภูมิ, เซลเซียส, ฟาเรนไฮต์, เคลวิน, celsius, fahrenheit, kelvin">
+<meta property="og:title" content="แปลงหน่วยอุณหภูมิออนไลน์">
+<meta property="og:description" content="แปลงหน่วยอุณหภูมิออนไลน์ฟรี เซลเซียส ฟาเรนไฮต์ เคลวิน">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://pntsm12.github.io/kamnuanunhaphum/">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1063556443578237" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&family=Noto+Serif+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--bg:#FFFFFF;--bg2:#F7F7F5;--bg3:#F0EFEC;--border:#E4E4E0;--border2:#D4D4CF;--text:#1A1917;--text2:#706F6B;--text3:#B0AFA9;--ink:#1A1917;--accent:#2563EB;--header-bg:rgba(255,255,255,0.92);--logo-fill:#1A1917;}
+[data-theme="dark"]{--bg:#0F0F0F;--bg2:#1A1A1A;--bg3:#222222;--border:#2A2A2A;--border2:#333333;--text:#F0EFE8;--text2:#9A9890;--text3:#555450;--ink:#F0EFE8;--accent:#60A5FA;--header-bg:rgba(15,15,15,0.92);--logo-fill:#F0EFE8;}
+html{scroll-behavior:smooth;}
+body{font-family:'Sarabun',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s;}
+header{position:sticky;top:0;z-index:100;background:var(--header-bg);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border);height:56px;display:flex;align-items:center;padding:0 20px;gap:10px;}
+.header-logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex:1;}
+.logo-icon svg{width:32px;height:32px;display:block;}
+.logo-text{display:flex;flex-direction:column;line-height:1.1;}
+.logo-text-th{font-family:'Noto Serif Thai',serif;font-size:16px;font-weight:700;color:var(--text);}
+.logo-text-en{font-size:10px;font-weight:500;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;}
+.dark-toggle{width:36px;height:36px;border:1.5px solid var(--border);border-radius:50%;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;color:var(--text2);flex-shrink:0;}
+.dark-toggle:hover{border-color:var(--border2);color:var(--text);}
+.ad-strip{background:var(--bg2);border-bottom:1px solid var(--border);display:flex;justify-content:center;padding:8px 16px;}
+.ad-728{width:100%;max-width:728px;height:90px;background:var(--bg);border:1.5px dashed var(--border2);border-radius:4px;display:flex;align-items:center;justify-content:center;color:var(--text3);font-size:12px;}
+@media(max-width:600px){.ad-728{height:60px;}}
+.ad-mid{display:flex;justify-content:center;margin:28px 0;}
+.page-wrap{max-width:640px;margin:0 auto;padding:36px 20px 64px;}
+.page-heading{margin-bottom:28px;}
+.page-heading h1{font-family:'Noto Serif Thai',serif;font-size:clamp(28px,6vw,40px);font-weight:700;color:var(--text);line-height:1.15;letter-spacing:-0.5px;}
+.page-heading p{margin-top:8px;font-size:15px;color:var(--text2);}
+.field-label{font-size:13px;font-weight:600;color:var(--text2);letter-spacing:0.3px;margin-bottom:8px;display:block;}
+hr.section-hr{border:none;border-top:1px solid var(--border);margin:24px 0;}
+
+/* Main converter card */
+.conv-card{border:1.5px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:16px;}
+.conv-section{padding:20px;}
+.conv-input-wrap{display:flex;align-items:center;border:1.5px solid var(--border);border-radius:8px;overflow:hidden;background:var(--bg);transition:border-color .15s,box-shadow .15s;}
+.conv-input-wrap:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(37,99,235,0.1);}
+.conv-input-wrap input{flex:1;padding:12px 14px;border:none;outline:none;font-family:'Sarabun',sans-serif;font-size:22px;font-weight:700;color:var(--text);background:transparent;width:100%;}
+.conv-input-wrap input::placeholder{color:var(--text3);font-weight:400;font-size:16px;}
+.unit-btn-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
+.unit-btn{padding:12px 8px;border:1.5px solid var(--border);border-radius:8px;background:var(--bg);font-family:'Sarabun',sans-serif;font-size:14px;font-weight:500;color:var(--text2);cursor:pointer;text-align:center;transition:all .15s;line-height:1.4;}
+.unit-btn:hover:not(.active){border-color:var(--border2);color:var(--text);}
+.unit-btn.active{border-color:var(--ink);background:var(--ink);color:var(--bg);font-weight:600;}
+.unit-btn .unit-symbol{font-size:18px;font-weight:700;display:block;}
+.unit-btn .unit-name{font-size:11px;color:inherit;opacity:0.7;}
+.arrow-divider{display:flex;align-items:center;padding:4px 20px;}
+.arrow-line{flex:1;height:1.5px;background:var(--border);}
+.arrow-icon{font-size:26px;color:var(--ink);padding:0 16px;line-height:1;}
+.conv-result{background:var(--bg2);border-top:1px solid var(--border);padding:24px 20px;text-align:center;}
+.conv-result-num{font-family:'Noto Serif Thai',serif;font-size:48px;font-weight:700;color:var(--text);letter-spacing:-1px;line-height:1.1;}
+.conv-result-unit{font-size:15px;color:var(--text2);margin-top:6px;}
+
+/* All units panel */
+.all-card{border:1.5px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:16px;}
+.all-row{display:flex;align-items:center;border-bottom:1px solid var(--border);}
+.all-row:last-child{border-bottom:none;}
+.all-row:focus-within{background:var(--bg2);}
+.all-label{padding:0 20px;min-width:160px;font-size:15px;font-weight:600;color:var(--text2);}
+.all-label .sym{font-size:18px;color:var(--text);margin-right:6px;}
+.all-input{flex:1;padding:14px 16px;border:none;outline:none;font-family:'Sarabun',sans-serif;font-size:20px;font-weight:600;color:var(--text);background:transparent;width:100%;}
+.all-input::placeholder{color:var(--text3);font-weight:400;font-size:15px;}
+
+/* Temperature gauge */
+.gauge-card{background:var(--bg2);border:1.5px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;}
+.gauge-label{font-size:12px;font-weight:600;color:var(--text3);letter-spacing:0.8px;text-transform:uppercase;margin-bottom:14px;}
+.gauge-bar{height:12px;border-radius:6px;background:linear-gradient(to right,#3B82F6,#22C55E,#F59E0B,#EF4444);position:relative;margin-bottom:8px;}
+.gauge-pointer{position:absolute;top:-4px;width:20px;height:20px;background:var(--ink);border-radius:50%;border:2px solid var(--bg);box-shadow:0 1px 4px rgba(0,0,0,0.2);transform:translateX(-50%);transition:left .4s cubic-bezier(0.34,1.56,0.64,1);}
+.gauge-ticks{display:flex;justify-content:space-between;font-size:11px;color:var(--text3);}
+.temp-context{font-size:13px;color:var(--text2);margin-top:10px;text-align:center;}
+.temp-context strong{color:var(--text);}
+
+.share-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:16px;}
+.btn-share-action{padding:11px 8px;border-radius:9px;border:1.5px solid var(--border);background:transparent;font-family:'Sarabun',sans-serif;font-size:13px;font-weight:600;color:var(--text2);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s;}
+.btn-share-action:hover{border-color:var(--border2);color:var(--text);}
+
+.ref-table{width:100%;border-collapse:collapse;font-size:14px;margin-top:12px;}
+.ref-table th{text-align:left;padding:10px 14px;font-size:11px;font-weight:600;color:var(--text3);letter-spacing:0.5px;border-bottom:1.5px solid var(--border);background:var(--bg2);}
+.ref-table td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text2);}
+.ref-table tr:last-child td{border-bottom:none;}
+.ref-table td:first-child{font-weight:600;color:var(--text);}
+.info-section{border-top:1px solid var(--border);padding-top:32px;}
+.info-section h2{font-family:'Noto Serif Thai',serif;font-size:18px;font-weight:700;color:var(--text);margin-bottom:8px;}
+.info-section h2.mt{margin-top:24px;}
+.info-section p{font-size:14px;color:var(--text2);line-height:1.85;}
+footer{border-top:1px solid var(--border);padding:24px 20px;text-align:center;font-size:13px;color:var(--text3);}
+footer a{color:var(--text3);text-decoration:none;}
+footer a:hover{color:var(--text2);text-decoration:underline;}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--ink);color:var(--bg);padding:10px 20px;border-radius:8px;font-size:14px;font-weight:500;transition:transform .3s ease;z-index:999;pointer-events:none;}
+.toast.show{transform:translateX(-50%) translateY(0);}
+</style>
+</head>
+<body>
+<header>
+  <a class="header-logo" href="/">
+    <div class="logo-icon">
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="7" fill="var(--logo-fill)"/>
+        <text x="5" y="24" font-family="Arial Black, sans-serif" font-size="22" font-weight="900" fill="var(--bg)">K</text>
+        <text x="14" y="27" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="var(--bg)">+×=</text>
+      </svg>
+    </div>
+    <div class="logo-text">
+      <span class="logo-text-th">คำนวณ</span>
+      <span class="logo-text-en">KAMNUAN</span>
+    </div>
+  </a>
+  <button class="dark-toggle" onclick="toggleDark()" title="เปลี่ยนธีม">
+    <svg id="iconSun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+      <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+      <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+    </svg>
+    <svg id="iconMoon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+    </svg>
+  </button>
+</header>
+
+<div class="ad-strip"><div class="ad-728">📢 Google AdSense — 728×90 Leaderboard (Top)</div></div>
+
+<div class="page-wrap">
+  <div class="page-heading">
+    <h1>แปลงหน่วยอุณหภูมิ</h1>
+    <p>แปลงเซลเซียส ฟาเรนไฮต์ และเคลวินได้ทันที พร้อมบอกบริบทอุณหภูมินั้น</p>
+  </div>
+
+  <!-- Main converter -->
+  <div class="conv-card">
+    <div class="conv-section">
+      <span class="field-label">กรอกอุณหภูมิ</span>
+      <div class="conv-input-wrap">
+        <input type="number" id="aInput" placeholder="เช่น 37" inputmode="decimal" oninput="aConvert()">
+      </div>
+    </div>
+    <div class="conv-section" style="padding-top:0;">
+      <span class="field-label">จากหน่วย</span>
+      <div class="unit-btn-grid" id="aFromGrid"></div>
+    </div>
+    <div class="arrow-divider">
+      <div class="arrow-line"></div>
+      <div class="arrow-icon">↓</div>
+      <div class="arrow-line"></div>
+    </div>
+    <div class="conv-section" style="padding-top:0;">
+      <span class="field-label">แปลงเป็น</span>
+      <div class="unit-btn-grid" id="aToGrid"></div>
+    </div>
+    <div class="conv-result">
+      <div class="conv-result-num" id="aResultNum">–</div>
+      <div class="conv-result-unit" id="aResultUnit">เลือกหน่วยและกรอกอุณหภูมิ</div>
+    </div>
+  </div>
+
+  <!-- Gauge -->
+  <div class="gauge-card" id="gaugeCard" style="display:none;">
+    <div class="gauge-label">ระดับอุณหภูมิ</div>
+    <div class="gauge-bar">
+      <div class="gauge-pointer" id="gaugePointer" style="left:50%"></div>
+    </div>
+    <div class="gauge-ticks">
+      <span>เยือกแข็ง<br>0°C</span>
+      <span style="text-align:center;">เย็น<br>10°C</span>
+      <span style="text-align:center;">ร้อน<br>35°C</span>
+      <span style="text-align:right;">ร้อนมาก<br>50°C</span>
+    </div>
+    <div class="temp-context" id="tempContext"></div>
+  </div>
+
+  <!-- All units -->
+  <span class="field-label" style="margin-top:8px;">ดูทุกหน่วยพร้อมกัน</span>
+  <p style="font-size:13px;color:var(--text3);margin-bottom:12px;">กรอกค่าในช่องใดช่องหนึ่ง ช่องอื่นจะอัปเดตทันที</p>
+  <div class="all-card">
+    <div class="all-row">
+      <div class="all-label"><span class="sym">°C</span>เซลเซียส</div>
+      <input class="all-input" type="number" id="b-c" placeholder="–" inputmode="decimal" oninput="bConvert('c')">
+    </div>
+    <div class="all-row">
+      <div class="all-label"><span class="sym">°F</span>ฟาเรนไฮต์</div>
+      <input class="all-input" type="number" id="b-f" placeholder="–" inputmode="decimal" oninput="bConvert('f')">
+    </div>
+    <div class="all-row">
+      <div class="all-label"><span class="sym">K</span>เคลวิน</div>
+      <input class="all-input" type="number" id="b-k" placeholder="–" inputmode="decimal" oninput="bConvert('k')">
+    </div>
+  </div>
+
+  <div class="share-row">
+    <button class="btn-share-action" onclick="shareResult('line')">Line</button>
+    <button class="btn-share-action" onclick="shareResult('fb')">Facebook</button>
+    <button class="btn-share-action" onclick="shareResult('copy')">คัดลอก</button>
+  </div>
+
+  <div class="ad-mid"><div class="ad-728">📢 Google AdSense — 728×90 Leaderboard (In-content)</div></div>
+
+  <div class="info-section">
+    <h2>อุณหภูมิอ้างอิงที่ควรรู้</h2>
+    <table class="ref-table">
+      <thead><tr><th>สถานการณ์</th><th>°C</th><th>°F</th></tr></thead>
+      <tbody>
+        <tr><td>น้ำแข็ง (จุดเยือกแข็ง)</td><td>0°C</td><td>32°F</td></tr>
+        <tr><td>อากาศเย็นสบาย</td><td>20–25°C</td><td>68–77°F</td></tr>
+        <tr><td>อากาศร้อนในไทย</td><td>35–40°C</td><td>95–104°F</td></tr>
+        <tr><td>ไข้ต่ำ</td><td>37.5°C</td><td>99.5°F</td></tr>
+        <tr><td>ไข้สูง</td><td>39°C+</td><td>102°F+</td></tr>
+        <tr><td>น้ำเดือด</td><td>100°C</td><td>212°F</td></tr>
+        <tr><td>ศูนย์สัมบูรณ์</td><td>−273.15°C</td><td>−459.67°F</td></tr>
+      </tbody>
+    </table>
+    <h2 class="mt">สูตรแปลงอุณหภูมิ</h2>
+    <p>°F = (°C × 9/5) + 32 · °C = (°F − 32) × 5/9 · K = °C + 273.15</p>
+  </div>
+
+  <div class="ad-mid" style="margin-bottom:0;"><div class="ad-728">📢 Google AdSense — 728×90 Leaderboard (Bottom)</div></div>
+</div>
+
+<footer>
+  <p>© 2568 แปลงหน่วยอุณหภูมิออนไลน์ · <a href="#">นโยบายความเป็นส่วนตัว</a> · <a href="#">ติดต่อ</a></p>
+</footer>
+<div class="toast" id="toast">คัดลอกแล้ว!</div>
+
+<script>
+function initTheme(){const s=localStorage.getItem('theme');const p=window.matchMedia('(prefers-color-scheme: dark)').matches;applyTheme(s||(p?'dark':'light'));}
+function applyTheme(t){document.documentElement.setAttribute('data-theme',t);document.getElementById('iconSun').style.display=t==='dark'?'block':'none';document.getElementById('iconMoon').style.display=t==='light'?'block':'none';localStorage.setItem('theme',t);}
+function toggleDark(){applyTheme(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');}
+initTheme();
+
+const UNITS=[
+  {key:'c', sym:'°C', name:'เซลเซียส'},
+  {key:'f', sym:'°F', name:'ฟาเรนไฮต์'},
+  {key:'k', sym:'K',  name:'เคลวิน'},
+];
+let aFrom='c', aTo='f';
+
+function toCelsius(val, unit){
+  if(unit==='c')return val;
+  if(unit==='f')return(val-32)*5/9;
+  if(unit==='k')return val-273.15;
+}
+function fromCelsius(c, unit){
+  if(unit==='c')return c;
+  if(unit==='f')return c*9/5+32;
+  if(unit==='k')return c+273.15;
+}
+function fmt(n){return parseFloat(n.toFixed(2)).toString();}
+
+// Build buttons
+const aFromGrid=document.getElementById('aFromGrid');
+const aToGrid=document.getElementById('aToGrid');
+UNITS.forEach(u=>{
+  const bf=document.createElement('button');
+  bf.className='unit-btn'+(u.key===aFrom?' active':'');
+  bf.innerHTML=`<span class="unit-symbol">${u.sym}</span><span class="unit-name">${u.name}</span>`;
+  bf.onclick=()=>{aFrom=u.key;aFromGrid.querySelectorAll('.unit-btn').forEach((b,i)=>b.classList.toggle('active',UNITS[i].key===u.key));aConvert();};
+  aFromGrid.appendChild(bf);
+
+  const bt=document.createElement('button');
+  bt.className='unit-btn'+(u.key===aTo?' active':'');
+  bt.innerHTML=`<span class="unit-symbol">${u.sym}</span><span class="unit-name">${u.name}</span>`;
+  bt.onclick=()=>{aTo=u.key;aToGrid.querySelectorAll('.unit-btn').forEach((b,i)=>b.classList.toggle('active',UNITS[i].key===u.key));aConvert();};
+  aToGrid.appendChild(bt);
+});
+
+function getTempContext(c){
+  if(c<=-273.15)return'ศูนย์สัมบูรณ์ อุณหภูมิต่ำสุดที่เป็นไปได้';
+  if(c<0)return`<strong>ต่ำกว่าจุดเยือกแข็ง</strong> น้ำกลายเป็นน้ำแข็ง`;
+  if(c<10)return`<strong>หนาวมาก</strong> ต้องใส่เสื้อกันหนาวหนา`;
+  if(c<20)return`<strong>เย็นสบาย</strong> อากาศดี ไม่ร้อนไม่หนาว`;
+  if(c<30)return`<strong>อุ่น</strong> อากาศสบาย เหมาะกับการออกไปข้างนอก`;
+  if(c<37)return`<strong>ร้อน</strong> อากาศร้อนแบบไทยๆ ดื่มน้ำเยอะๆ`;
+  if(c<37.5)return`<strong>อุณหภูมิร่างกายปกติ</strong> 36–37.4°C`;
+  if(c<38)return`<strong>มีไข้ต่ำ</strong> ควรพักผ่อนและดูแลตัวเอง`;
+  if(c<39)return`<strong>มีไข้</strong> ควรพบแพทย์ถ้าไม่ดีขึ้น`;
+  if(c<40)return`<strong>ไข้สูง</strong> ควรพบแพทย์โดยเร็ว`;
+  if(c<100)return`<strong>ร้อนมาก</strong> อันตราย ระวังฮีทสโตรก`;
+  return`<strong>น้ำเดือดที่ 100°C</strong> หรือสูงกว่า`;
+}
+
+function aConvert(){
+  const val=parseFloat(document.getElementById('aInput').value);
+  if(isNaN(val)){
+    document.getElementById('aResultNum').textContent='–';
+    document.getElementById('aResultUnit').textContent='เลือกหน่วยและกรอกอุณหภูมิ';
+    document.getElementById('gaugeCard').style.display='none';
+    return;
+  }
+  const c=toCelsius(val,aFrom);
+  const result=fromCelsius(c,aTo);
+  const toUnit=UNITS.find(u=>u.key===aTo);
+  document.getElementById('aResultNum').textContent=fmt(result);
+  document.getElementById('aResultUnit').textContent=toUnit.name+' ('+toUnit.sym+')';
+
+  // Gauge
+  document.getElementById('gaugeCard').style.display='block';
+  const pct=Math.min(100,Math.max(0,((c-0)/(50-0))*100));
+  document.getElementById('gaugePointer').style.left=pct+'%';
+  document.getElementById('tempContext').innerHTML=getTempContext(c);
+
+  // Sync all inputs
+  document.getElementById('b-c').value=fmt(c);
+  document.getElementById('b-f').value=fmt(fromCelsius(c,'f'));
+  document.getElementById('b-k').value=fmt(fromCelsius(c,'k'));
+}
+
+function bConvert(unit){
+  const val=parseFloat(document.getElementById('b-'+unit).value);
+  if(isNaN(val)){UNITS.forEach(u=>{if(u.key!==unit)document.getElementById('b-'+u.key).value='';});return;}
+  const c=toCelsius(val,unit);
+  UNITS.forEach(u=>{if(u.key!==unit)document.getElementById('b-'+u.key).value=fmt(fromCelsius(c,u.key));});
+}
+
+function getShareText(){
+  const c=parseFloat(document.getElementById('b-c').value);
+  const f=parseFloat(document.getElementById('b-f').value);
+  const k=parseFloat(document.getElementById('b-k').value);
+  if(isNaN(c))return'';
+  return`แปลงหน่วยอุณหภูมิ\n${fmt(c)}°C = ${fmt(f)}°F = ${fmt(k)}K\nแปลงได้ที่ pntsm12.github.io/kamnuanunhaphum/`;
+}
+
+function shareResult(type){
+  const text=getShareText();
+  if(!text){alert('กรุณากรอกอุณหภูมิก่อน');return;}
+  if(type==='line')window.open('https://line.me/R/msg/text/?'+encodeURIComponent(text),'_blank');
+  else if(type==='fb')window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://pntsm12.github.io/kamnuanunhaphum/'),'_blank');
+  else{navigator.clipboard.writeText(text).then(showToast).catch(()=>{const ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);showToast();});}
+}
+
+function showToast(){const t=document.getElementById('toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2500);}
+</script>
+</body>
+</html>
